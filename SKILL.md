@@ -1,9 +1,25 @@
 ---
-name: overleaf
+name: overleaf-latex
 description: "Manage Overleaf LaTeX projects via git integration. Clone, branch, edit, compile, and push LaTeX resumes, papers, and documents. Use when the user mentions Overleaf, LaTeX resume editing, compiling LaTeX, or creating document versions on Overleaf. Triggers on: overleaf, latex, resume version, compile latex, push to overleaf, overleaf git, overleaf project."
+metadata:
+  openclaw:
+    requires:
+      bins: [git, pdflatex]
 ---
 
 # Overleaf Skill
+
+## OpenClaw Plugin Available
+
+For full agent tool integration (6 native tools: overleaf_clone, overleaf_branch, overleaf_compile, overleaf_push, overleaf_status, overleaf_health), install the Overleaf plugin:
+
+```bash
+openclaw plugins install clawhub:@wahajahmed010/openclaw-overleaf
+```
+
+Source: https://github.com/wahajahmed010/openclaw-overleaf
+
+The skill below covers the manual workflow. The plugin provides the same functionality as native agent tools.
 
 Manage Overleaf LaTeX projects through git integration. Clone projects, create branches for tailored versions, edit LaTeX, compile locally, and push back.
 
